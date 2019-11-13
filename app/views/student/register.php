@@ -24,6 +24,7 @@
 				<label>Student Name</label>
 				<input type="text" name="" placeholder="Student Name">
 			</div>
+			<input type="submit" name="" class="btn btn-success" value="Register">
 		</form>
 
 

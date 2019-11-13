@@ -28,6 +28,8 @@
 
 		public function register($studentInfo)
 		{
+
+			// echo 'Register from model';
 			extract($studentInfo);
 
 			$sql = "INSERT INTO students(studno , firstname , lastname , middlename , year ,

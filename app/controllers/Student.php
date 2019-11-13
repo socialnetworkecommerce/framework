@@ -6,7 +6,7 @@
 		public function __construct()
 		{
 			//load user model
-			$this->userModel = $this->model('studentModel');
+			$this->studentModel = $this->model('studentModel');
 		}
 
 		public function list()
@@ -21,7 +21,7 @@
 			];
 
 			if($this->request() === 'POST') {
-				$this->userModel->register($_POST);
+				$this->studentModel->register($_POST);
 			}else{
 				$this->view('student/register' , $data);
 			}
