@@ -1,0 +1,296 @@
+/* CSS Document */
+
+/* RESET */
+html, body, div, span, applet, object, iframe, p, blockquote,
+a, abbr, acronym, big, cite, code,
+del, dfn, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd,
+fieldset, form, label, legend {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	/*border-spacing: 0;*/
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+* {
+  box-sizing: border-box; }  
+
+
+body {
+	font-family: Montserrat, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	background:#ffffff;
+	margin: 0px; line-height:18px;
+}
+
+a{
+	color:#239db1; 
+}
+.alignleft {
+	float:left;
+}
+.alignright {
+	float:right;
+}
+.textleft {
+	text-align:left;
+}
+.textright {
+	text-align:right;
+}
+.textcenter {
+	text-align:center;
+}
+.clearfix:after
+{
+    font-size: 0px;
+    content: ".";
+    display: block;
+    height: 0px;
+    visibility: hidden;
+    clear: both;
+}  
+.row:after
+{
+    font-size: 0px;
+    content: ".";
+    display: block;
+    height: 0px;
+    visibility: hidden;
+    clear: both;
+}
+.row.margin {
+	margin:0 0 20px;
+}
+
+.loader {
+	background:#FFFFFF; width:99%; text-align:center; display:none; padding:8px 20px; color:#333333
+}
+.error {
+	margin:15px 0; background:#e5633e; padding:10px; text-align:center; color:#fff; border:1px solid #e5633e; border-radius:5px; font-size:14px;
+}
+.error_input {
+	border:1px solid #ff7d36 !important; 
+}
+.error_label {
+	color:#ff7d36; margin-top:3px; margin-bottom:8px;
+}
+.success {
+	margin:15px 0; background:#13ab8b; padding:10px; text-align:center; color:#fff; border:1px solid #13ab8b; border-radius:5px; font-size:14px;
+}
+
+.white {
+	color:#fff !important
+}
+
+._1-2 {
+	width:50%; float:left; padding:.5% 2%;
+}
+
+.login {
+	background:#fff; height:100vh; text-align:center; padding:0; 
+}
+.register {
+	padding:50px 0;
+}
+.register h4 {
+	color:#4285f4;
+}
+.register .member-login {
+	color: #666666; margin-top:15px;
+}
+.register .member-login a{
+	color:#ec5239; font-weight:bold;
+}
+.register form .facebook {
+	background:#3b5998; color:#fff; padding:16px 25px 19px; border-radius:5px; font-size:18px; margin:20px 0 0; display:block; text-decoration:none;
+	border:1px solid #3b5998;
+}
+.register form .facebook i{
+	margin-right:10px; border:1px solid #fff; border-radius:50%; width:30px; height:30px; text-align:center; padding:6px;
+}
+.register form p.fancy{
+	display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	margin:25px 0; color:#fff;
+	margin-bottom:0;
+}
+.register form p.fancy:before,
+.register form p.fancy:after {
+    content: '';
+    border-top: 1px solid #ccc;
+    margin: 0 10px 0 25px;
+    flex: 1 0 20px;
+}
+
+.register form p.fancy:after {
+    margin: 0 25px 0 10px;
+}
+
+
+.login .form-wrapper, .register .form-wrapper {
+	width:600px; margin:auto;
+}
+.login .login, .register .login {
+	font-size:18px; font-weight:bold;
+	color:#333d40;
+}
+.login form {
+	padding-top:50px;
+}
+.login form img {
+	max-width:100%
+}
+.login form input, .register form input, .register form select{
+	width:100%; margin-top:25px;
+	padding:20px; border-radius:5px;
+	border:1px solid #cecece; 
+}
+.login form .facebook {
+	background:#3b5998; color:#fff; padding:16px 25px 19px; border-radius:5px; font-size:18px; margin:20px 0 0; display:block; text-decoration:none;
+}
+.login form .facebook i{
+	margin-right:10px; border:1px solid #fff; border-radius:50%; width:30px; height:30px; text-align:center; padding:6px;
+}
+.login form p.fancy{
+	display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	margin:25px 0; color:#fff;
+	margin-bottom:0;
+}
+.login form p.fancy:before,
+.login form p.fancy:after {
+    content: '';
+    border-top: 1px solid #ccc;
+    margin: 0 10px 0 25px;
+    flex: 1 0 20px;
+}
+
+.login form p.fancy:after {
+    margin: 0 25px 0 10px;
+}
+
+
+
+.register form label{
+	color:#fff; margin-bottom:-20px !important; 
+	display:block; margin-top:20px;
+}
+.login form button, .register form button{
+	margin-top:25px;
+	padding:20px 40px; border-radius:5px;
+	border:1px solid #4285f4; background:#4285f4;
+	color:#fff; font-size:16px;
+}
+
+.login.background, .register.background {
+	
+}
+.page.background {
+	background: url(/images/background.jpg) fixed;
+	padding:50px; 
+}
+
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+@media (max-width: 768px)
+{
+	.login.background, .register.background {
+		
+	}
+	.login .form-wrapper, .register .form-wrapper {
+		width:100%; padding:0 5%;
+	}
+	.login .logo, .register .logo {
+		width:200px;
+	}
+	.login .registration{
+		margin-top:30px;
+		font-size:20px; 
+	}
+	
+	.register form input, .register form select{
+		margin-top:15px;
+		padding:14px 10px; border-radius:5px;
+	}
+	.login form {
+		padding-top:80px;
+	}
+	
+	.register form .facebook {
+		background:#3b5998; color:#fff; padding:10px 15px 13px; border-radius:5px; font-size:14px; margin:20px 0 0; display:block; text-decoration:none;
+	}
+	.register form .facebook i{
+		margin-right:10px; border:1px solid #fff; border-radius:50%; width:30px; height:30px; text-align:center; padding:6px;
+	}
+		
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('/fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('/fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('/fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+

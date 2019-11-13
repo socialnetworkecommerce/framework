@@ -1,0 +1,1019 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+/* RESET */
+html, body, div, span, applet, object, iframe, p, blockquote,
+a, abbr, acronym, big, cite, code,
+del, dfn, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd,
+fieldset, form, label, legend {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+	font-family: Montserrat !important;
+}
+ol, ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	/*border-spacing: 0;*/
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+* {
+  box-sizing: border-box; }  
+
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	background:#38383d;
+	margin: 0px;
+	color:#bdc4d4; 
+}
+
+a{
+	color:#239db1;
+}
+.alignleft {
+	float:left;
+}
+.alignright {
+	float:right;
+}
+.textleft {
+	text-align:left;
+}
+.textright {
+	text-align:right;
+}
+.textcenter {
+	text-align:center;
+}
+.max-width {
+	max-width:100%;
+}
+.line-through {
+	text-decoration:line-through;
+}
+
+.loader {
+	background:#FFFFFF; width:99%; text-align:center; display:none; padding:8px 20px; color:#333333
+}
+.error {
+	margin:15px 0; background:#e5633e; padding:10px; text-align:center; color:#fff; border:1px solid; border-radius:5px; font-size:14px;
+}
+.error_input {
+	border:1px solid; border-color:#e5633e; 
+}
+.error_label {
+	color:#e5633e; margin-top:3px; margin-bottom:8px;
+}
+.success {
+	margin:15px 0; background:#13ab8b; padding:10px; text-align:center; color:#fff; border:1px solid; border-radius:5px; font-size:14px;
+}
+.success_input {
+	border:1px solid; border-color:#ccc; 
+}
+.display-none {
+	display:none !important;
+}
+.relative {
+	position:relative
+}
+.absolute {
+	position:absolute;
+}
+.nowrap {
+	white-space:nowrap; 
+}
+table .nowrap {
+	white-space:nowrap; width:1% !important ;
+}
+
+.nav_title {
+    width: 230px;
+    float: left;
+    border-radius: 0;
+	padding:15px;
+	text-align:center;
+}
+.profile_pic {
+    width: 100% !important;
+	float:none !important;	
+	text-align:center;
+}
+.img-circle.profile_img {
+    width: 40% !important;
+    background: #fff;
+    z-index: 1000;
+    position: inherit;
+    margin-top: 10px;
+    padding: 4px;
+	 margin-left: 0 !important;
+}
+
+.profile_info {
+    padding: 10px;
+    width: 100% !important;
+	float:none !important;
+	padding:0 !important;
+	text-align:center;
+	margin:0 !important;
+}
+.profile-photo {
+	border:1px solid #ccc;
+	position:relative;
+}
+.profile-photo img {
+	max-width:100%;
+}
+.profile-photo .cover {
+	position:absolute; background:#000000;
+	width:100%; height:100%;
+	color:#fff; opacity:0.7;
+	text-align:center; display:none;
+	cursor:pointer;
+}
+.profile-photo .text {
+	position: relative;
+	top: 40%;
+	transform: translateY(-40%); 
+}
+.profile-photo .preloader {
+	position:absolute; text-align:center;
+	width:100% !important; background-color:#fff;
+	height:100%; padding-top:12%; display:none;
+}
+
+.profile-photo .preloader .image-wrapper {
+	position: relative;
+	top: 40%;
+	transform: translateY(-40%); 
+}
+.margin-bottom-20 {
+	margin-bottom:12px;
+}
+
+/* Genealogy */
+.genealogy  {
+	text-align:center;
+}
+.genealogy .wrapper  {
+	float: left; text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 5px 0 5px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+.genealogy .wrapper.level1  {
+	display:block;
+}
+
+.genealogy .wrapper .name {
+	width:150px; height:20px; background:#00CCCC; margin:auto;
+}
+
+.genealogy .wrapper::before, .genealogy .wrapper::after{
+	content: '';
+	position: absolute; top: 0; right: 50%;
+	border-top: 1px solid #ccc;
+	width: 50%; height: 20px;
+}
+.genealogy .wrapper::after{
+	right: auto; left: 50%;
+	border-left: 1px solid #ccc;
+}
+
+
+
+.tree {
+	white-space: nowrap; overflow:auto; padding:0 50px 50px; text-align:center;
+}
+.tree span{
+	font-size:12px; 
+}
+.tree .circle {
+	width:60px; height:60px; background:#ededed; border-radius:50%; margin:0 auto 5px;
+	font-size:36px; border:2px solid #778a8a; position:relative;
+}
+.tree .position {
+	font-size:11px; font-weight:normal; border:1px solid #ccc; background:#f2f2f2;
+}
+.tree .circle img {
+	width:50px; height:50px; border-radius:50%; margin:4px; 
+}
+.tree .arrow{
+	margin:0 0 15px; 
+}
+.tree .arrow i{
+	font-size:30px;
+}
+.tree .arrow a{
+	background:#56a4a6; color:#fff; border:1px solid #56a4a6; 
+}
+.tree ul {
+	padding-top: 20px; position: relative;	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.tree li {
+	display: inline-block; text-align: center;
+	list-style-type: none; margin-right:-4px;
+	position: relative; vertical-align:top;
+	padding: 20px 5px 0 5px;	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s; 
+}
+
+/*We will use ::before and ::after to draw the connectors*/
+
+.tree li::before, .tree li::after{
+	content: '';
+	position: absolute; top: 0; right: 50%;
+	border-top: 2px solid #d5d5d5;
+	width: 50%; height: 20px;
+}
+.tree li::after{
+	right: auto; left: 50%;
+	border-left: 1px solid #d5d5d5;
+}
+
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+	display: none;
+}
+
+/*Remove space from the top of single children*/
+.tree li:only-child{ padding-top: 0;}
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after{
+	border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before{
+	border-right: 2px solid #d5d5d5;
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after{
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+
+/*Time to add downward connectors from parents*/
+.tree ul ul::before{
+	content: '';
+	position: absolute; top: 0; left: 50%;
+	border-left: 4px solid #d5d5d5;
+	width: 0; height: 20px;
+}
+
+.tree li a{
+	border: 1px solid #f7f7f7 !important;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #575757;
+	font-weight:bold;
+	font-family: arial, verdana, tahoma;
+	font-size: 14px;
+	display: inline-block;
+	
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	
+	background:#f7f7f7;
+}
+.tree.tree2 li a{
+	border: 1px solid #ccc !important;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #575757;
+	font-weight:bold;
+	font-family: arial, verdana, tahoma;
+	font-size: 14px;
+	display: inline-block;
+	
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	
+	background:#f7f7f7;
+}
+.tree li a.addnew {
+	font-weight: bold; background:#56a4a6; color:#e5fbff; border:1px solid #56a4a6;
+	padding:10px 15px;
+}
+.tree li a.addnew:hover {
+	font-weight: bold; background:#33797b; color:#e5fbff; border:1px solid #56a4a6;
+}
+.tree li a.max{
+	font-weight: bold; background-color:#dbdee2; border:1px solid #c3c3c3; color:#afafaf;
+}
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree li a:hover, .tree li a:hover+ul li a {
+	background: #56a4a6; color: #fff; border: 1px solid #56a4a6;
+}
+.tree li a:hover .position {
+	background: #348486; color: #fff; border: 1px solid #236264;
+}
+/*Connector styles on hover*/
+.tree li a:hover+ul li::after, 
+.tree li a:hover+ul li::before, 
+.tree li a:hover+ul::before, 
+.tree li a:hover+ul ul::before{
+	border-color:  #56a4a6;
+}
+.tree li a.max:hover, .tree li a:hover+ul li a.max {
+	font-weight: bold; background-color:#dbdee2; border:1px solid #afafaf; color:#afafaf;
+}
+.tree li a.max:hover, .tree li a.max:hover+ul li a.max:hover{
+	color:#afafaf; background:#dbdee2; border:1px solid #afafaf;
+}
+.inactive {
+	color:#e5633e;
+}
+
+
+
+.center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.green {
+	color:#2c6cd7
+}
+.blue {
+	color:#2c6cd7 !important
+}
+.red {
+	color:#e5633e;
+}
+.black {
+	color:#373737;
+}
+.orange {
+	color:#f77f1e !important;
+}
+
+.date_search {
+	width:98%; padding:2%; margin-bottom:10px;
+	border-radius:5px; border:1px solid #ccc;
+}
+.btn-theme {
+	background:#56a4a6; border:#56a4a6;
+}
+.btn-theme:hover {
+	background:#2badb0; border:#56a4a6;
+}
+.btn-info:focus{color:#fff;background-color:#56a4a6;border-color:#1b6d85}
+
+.tile-stats .icon.green, .tile-stats h3 {
+	color:#2c6cd7 !important;
+}
+
+.left-count {
+	position:absolute; top:5px; right:70px; font-size:18px; background-color:#778a8a; color:#fff; padding:10px; border-radius:10px;
+}
+.right-count {
+	position:absolute; top:5px; left:70px; font-size:18px; background-color:#778a8a; color:#fff; padding:10px; border-radius:10px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+	border-radius:10px;
+    width: 30%;
+	text-align:center;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;	
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0px; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0px; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: #5cb85c;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px; border:0 !important; 
+}
+
+.modal-body {
+	padding:15px 25px 25px ; border:0 !important;
+}
+.modal-body .content {
+	overflow:auto;
+	height:250px !important;
+	font-size:12px;
+}
+
+
+
+.pagination > li > a,
+.pagination > li > span {
+  color: #4285f4;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  margin-left: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  z-index: 2;
+  color: #fff;
+  background-color: #4285f4;
+  border-color: #56a4a6;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color: #4285f4;
+  border-color: #4285f4;
+}
+
+.form-group .control-label {
+	font-weight:bold !important; padding-top:5px;
+}
+
+.form_wizard {
+	padding-top:50px !important;
+}
+.form_wizard #step-1, .form_wizard #step-2, .form_wizard #step-3 {
+	padding:20px 0 50px !important; 
+}
+
+
+.graphs {
+	width:50%; margin:auto; float:left;
+}
+.graphs .graph {
+	width:18%; margin:0 1%; display:inline-block; margin-right:-4px; vertical-align:bottom !important;  height:150px; text-align:center;
+	font-size:14px; color:#fff; padding-top:15px; background:#718a90;
+}
+.graphs .graph p{
+	font-size:12px;
+}
+.graphs .graph img{
+	max-width:80%;
+}
+.graphs .graph:nth-child(2) {
+	height:210px; background:#5c747a;
+}
+.graphs .graph:nth-child(3) {
+	height:270px; background:#516b71;
+}
+.graphs .graph:nth-child(4) {
+	height:330px; background:#476268;
+}
+.graphs .graph:nth-child(5) {
+	height:390px; background:#3c585e;
+}
+.graph_details {
+	width:50%; margin:auto; float:left;
+}
+.graph_details h3{
+	margin:0; font-weight: bold !important;
+}
+.graph_details .rank {
+	color:#6a8187; width:120px; text-align:center; line-height:.90;
+}
+.graph_details .rank img{
+	max-width:100%;
+}
+.graph_details h2 {
+	font-weight:bold;
+	color:#4a636a;
+}
+
+
+.row.products p{
+	font-weight:bold;	
+}
+
+
+.cart-header {
+	padding-top:21px; margin:0 20px; position:relative;
+	color:#373737;
+}
+.cart-header i{
+	font-size:24px; margin-right:5px; color:#4285f4;
+}
+.cart-header .count{
+	font-size:10px; margin-right:5px; position:absolute;
+	background:#f77f1e; color:#fff; border-radius:50%; 
+	height:20px; width:20px; text-align:center; padding-top:2px;
+	top:12px; left:15px; 
+}
+.cart.subtotal{
+	font-size:18px; font-weight:bold;
+}
+.cart input[type="text"] {
+	width:97%; border:1px solid #ccc;
+	padding:4px;
+}
+.cart .point {
+	display:block; font-size:11px; margin-top:-5px;
+	color:#4285f4;
+}
+.cart div {
+	 display:block; padding-top:10px;
+}
+
+.top_label {
+	display:block; margin:5px 0;
+}
+.col-text {
+	padding-top:8px; display:block; 
+}
+
+
+.notification {
+	color:#e5633e;
+	border:2px solid #e5633e;
+	padding:20px 30px;
+	margin:15px 0;
+}
+.notification a{
+	color:#4084f4;
+}
+
+
+.preloader {
+	background:#FFFFFF; width:99%; text-align:center; padding:8px 20px; color:#333333; display:none;
+}
+.preloader img{
+	float:left; margin-right:10px;
+}
+.preloader span{
+	display:inline-block; padding-top:5px;
+}
+
+.modal-preloader {
+	background:#FFFFFF; width:99%; text-align:center; padding:8px 20px; color:#333333; display:none;
+}
+.modal-preloader img{
+	float:left; margin-right:10px;
+}
+.modal-preloader span{
+	display:inline-block; padding-top:5px;
+}
+
+
+.video_wrapper {
+	background-color:#000000; text-align:center
+}
+.video_wrapper iframe{
+	width:560px; height:315px;
+}
+.video_wrapper.social iframe{
+	width:100%; height:700px;
+}
+
+.top-photos {
+	width:15% !important; 
+}
+
+
+@media (max-width: 1024px)
+{
+	.modal-content {
+		width: 50%;
+	}
+	
+	.graphs, .graph_details {
+		width:100%; float:none; margin:auto !important;
+	}
+	.graphs .graph {
+		width:19%; float:none; 
+	}
+	.video_wrapper.social iframe{
+		width:100%; height:350px;
+	}
+}
+@media (max-width: 800px)
+{
+	.video_wrapper.social iframe{
+		width:100%; height:300px;
+	}
+}
+@media (max-width: 768px)
+{
+	.modal-content {
+		width: 80%;
+	}
+	
+	
+	.tree {
+		white-space: nowrap; overflow:auto; padding:0 50px 50px; text-align:center;
+	}
+	.tree span{
+		font-size:10px; 
+	}
+	.tree .circle {
+		width:40px; height:40px; background:#ededed; border-radius:50%; margin:0 auto -2px;
+		font-size:34px; border:2px solid #778a8a; position:relative;
+	}
+	.tree .circle img {
+		width:28px; height:28px; border-radius:50%; margin:4px; 
+	}
+	.tree .arrow{
+		margin:0 0 15px; 
+	}
+	.tree .arrow i{
+		font-size:30px;
+	}
+	.tree .arrow a{
+		background:#56a4a6; color:#fff; border:1px solid #56a4a6; 
+	}
+	.tree ul {
+		padding-top: 20px; position: relative;	
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+	}
+	
+	.tree li {
+		display: inline-block; text-align: center;
+		list-style-type: none; margin-right:-4px;
+		position: relative; vertical-align:top;
+		padding: 20px 5px 0 5px;	
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s; 
+	}
+	
+	/*We will use ::before and ::after to draw the connectors*/
+	
+	.tree li::before, .tree li::after{
+		content: '';
+		position: absolute; top: 0; right: 50%;
+		border-top: 2px solid #d5d5d5;
+		width: 50%; height: 20px;
+	}
+	.tree li::after{
+		right: auto; left: 50%;
+		border-left: 1px solid #d5d5d5;
+	}
+	
+	/*We need to remove left-right connectors from elements without 
+	any siblings*/
+	.tree li:only-child::after, .tree li:only-child::before {
+		display: none;
+	}
+	
+	/*Remove space from the top of single children*/
+	.tree li:only-child{ padding-top: 0;}
+	
+	/*Remove left connector from first child and 
+	right connector from last child*/
+	.tree li:first-child::before, .tree li:last-child::after{
+		border: 0 none;
+	}
+	/*Adding back the vertical connector to the last nodes*/
+	.tree li:last-child::before{
+		border-right: 2px solid #d5d5d5;
+		border-radius: 0 5px 0 0;
+		-webkit-border-radius: 0 5px 0 0;
+		-moz-border-radius: 0 5px 0 0;
+	}
+	.tree li:first-child::after{
+		border-radius: 5px 0 0 0;
+		-webkit-border-radius: 5px 0 0 0;
+		-moz-border-radius: 5px 0 0 0;
+	}
+	
+	/*Time to add downward connectors from parents*/
+	.tree ul ul::before{
+		content: '';
+		position: absolute; top: 0; left: 50%;
+		border-left: 4px solid #d5d5d5;
+		width: 0; height: 20px;
+	}
+	
+	.tree li a{
+		border: 1px solid #f7f7f7;
+		padding: 5px 10px;
+		text-decoration: none;
+		color: #575757;
+		font-weight:bold;
+		font-family: arial, verdana, tahoma;
+		font-size: 14px;
+		display: inline-block;
+		
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		
+		background:#f7f7f7;
+	}
+	.tree li a.addnew {
+		font-weight: bold; background:#56a4a6; color:#e5fbff; border:1px solid #56a4a6;
+		padding:6px 10px; font-size:11px;
+	}
+	.tree li a.addnew:hover {
+		font-weight: bold; background:#33797b; color:#e5fbff; border:1px solid #56a4a6;
+	}
+	.tree li a.max{
+		font-weight: bold; background-color:#dbdee2; border:1px solid #c3c3c3; color:#afafaf;
+	}
+	
+	/*Time for some hover effects*/
+	/*We will apply the hover effect the the lineage of the element also*/
+	.tree li a:hover, .tree li a:hover+ul li a {
+		background: #56a4a6; color: #fff; border: 1px solid #56a4a6;
+	}
+	/*Connector styles on hover*/
+	.tree li a:hover+ul li::after, 
+	.tree li a:hover+ul li::before, 
+	.tree li a:hover+ul::before, 
+	.tree li a:hover+ul ul::before{
+		border-color:  #56a4a6;
+	}
+	.tree li a.max:hover, .tree li a:hover+ul li a.max {
+		font-weight: bold; background-color:#dbdee2; border:1px solid #afafaf; color:#afafaf;
+	}
+	.tree li a.max:hover, .tree li a.max:hover+ul li a.max:hover{
+		color:#afafaf; background:#dbdee2; border:1px solid #afafaf;
+	}
+	.video_wrapper.social iframe{
+		width:100%; height:350px;
+	}
+	
+}
+
+@media screen and (max-width: 600px) {
+ 
+  table#responsive {
+    border: 0; font-size:13px;	
+  }
+  table#responsive thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px; 	
+  }
+  table#responsive tr {   
+    display: block;
+    margin-bottom: 25px; border: 1px solid #f2f2f2;
+	border-radius:5px;
+  }
+  table#responsive td {    
+    display: block;
+	background-color:#f2f2f2;	
+	padding: 8px;	
+  }
+  
+  table#responsive td:nth-child(even) {  
+	background-color:#fff; 	
+  }
+  
+  table#responsive td:nth-child(1) {  
+		background-color:#56a4a6; font-size:14px;
+		color:#fff; font-weight:bold; border-radius: 5px 5px 0 0;
+		padding: 12px 10px;
+  }
+  table#responsive td:last-child  {  
+		border-radius: 0 0 5px 5px;
+  }
+
+  
+  table#responsive td:before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left; margin-right:25px;
+    font-weight: bold !important;
+    text-transform: uppercase;
+  }
+  
+  table#responsive td:nth-child(1):before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left; margin-right:5px; font-size:18px;
+    font-weight: bold !important;
+  }
+  
+  .video_wrapper iframe{
+		width:96%; height:315px;
+	}
+  
+}
+
+@media screen and (max-width: 480px) {
+	.tile-stats .icon {
+		display:none;
+	}
+	.top-photos {
+		width:100%;
+	}
+	.video_wrapper.social iframe{
+		width:100%; height:300px;
+	}
+}
+
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('/fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('/fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('/fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('/fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('/fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.left_col {
+    background: #0e53c6 !important;
+}
+body {
+    background: #0e53c6 !important;
+}
+.nav_title {
+     background: #0e53c6 !important;
+}
+.sidebar-footer {
+    background: #0e53c6 !important;
+}
+.nav.side-menu>li.active {
+    border-right: 0 solid #f6ab47 !important;
+}
+
+.nav.side-menu>li.active>a {
+    background: linear-gradient(#4b34a9, #4b34a9), #4b34a9 !important;
+	box-shadow: rgba(0, 0, 0, 0) 0 1px 0, inset rgba(255, 255, 255,0) 0 1px 0 !important
+}
+
+.nav.side-menu>li.current-page,
+.nav.side-menu>li.active {
+    border-right: 0 solid #f6ab47 !important;
+}
+
+.nav-md ul.nav.child_menu li:before {
+    background: #f6b754 !important;
+}
+.nav-md ul.nav.child_menu li:after {
+    border-left: 1px solid  #f6b754 !important;
+}
+.green {
+    color: #2c6cd7 !important;
+}
+
+
+
+ span.indicator
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px auto;
+    content: '123';
+}
+
+span.indicator-grey
+{
+    background: grey;
+}
+
+span.indicator-green
+{
+    background: green;
+}
